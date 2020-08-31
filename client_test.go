@@ -27,9 +27,9 @@ func client_test(t *testing.T) {
 	c.SendMessage(id, r)
 
 	time.Sleep(3 * time.Second)
-	re, err, t := p.GetOrTimeout(1000000)
-	log.Println(err)
-	log.Println(t)
-	log.Println(re)
-	cp.PutClient(c)
+	//re, err, t := p.GetOrTimeout(1000000)
+	//log.Println(err)
+	//log.Println(t)
+	//log.Println(re)
+	//cp.PutClient(c)
 }
