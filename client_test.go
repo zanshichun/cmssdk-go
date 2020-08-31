@@ -23,11 +23,22 @@ func client_test(t *testing.T) {
 		CrId:    "dfsa",
 	}
 
+	r1 := &model.ReqMessage{
+		Event:   0,
+		StrId:   "dfsa",
+		SetType: "dsf",
+		DevId:   "dfsaf",
+		DealId:  "dfsaf",
+		Ta:      1,
+		CrId:    "dfsa",
+	}
 	id, p := async.Feedback()
+	c.SendMessage(id, r1)
 	c.SendMessage(id, r)
 
 	time.Sleep(3 * time.Second)
 	//re, err, t := p.GetOrTimeout(1000000)
+	//p, err = async.GetPromise(id)
 	//log.Println(err)
 	//log.Println(t)
 	//log.Println(re)

@@ -25,6 +25,15 @@ func SetPromise(id string, p *promise.Promise) {
 	table.Set(id, p)
 }
 
+func GetPromise(id string) (*promise.Promise, error) {
+	i, ok := table.Get(id)
+	if !ok {
+		return nil, errPromiseGet
+	}
+	p := i.(*promise.Promise)
+	return p, nil
+}
+
 func Feedback() (string, *promise.Promise) {
 	p := promise.NewPromise()
 	p.OnSuccess(func(v interface{}) {
