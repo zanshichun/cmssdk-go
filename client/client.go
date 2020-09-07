@@ -1,10 +1,10 @@
 package client
 
 import (
-	"cmssdk-go/async"
-	"cmssdk-go/model"
 	"errors"
 	"github.com/gorilla/websocket"
+	"github.com/zanshichun/cmssdk-go/async"
+	"github.com/zanshichun/cmssdk-go/model"
 	"log"
 	"net/url"
 )

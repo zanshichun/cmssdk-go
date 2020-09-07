@@ -1,10 +1,9 @@
 package main
 
 import (
-	"cmssdk-go/async"
-	"cmssdk-go/client"
-	"cmssdk-go/model"
-	"log"
+	"github.com/zanshichun/cmssdk-go/async"
+	"github.com/zanshichun/cmssdk-go/client"
+	"github.com/zanshichun/cmssdk-go/model"
 	"testing"
 	"time"
 )
@@ -32,7 +31,7 @@ func client_test(t *testing.T) {
 		Ta:      1,
 		CrId:    "dfsa",
 	}
-	id, p := async.Feedback()
+	id, _ := async.Feedback()
 	c.SendMessage(id, r1)
 	c.SendMessage(id, r)
 

@@ -1,11 +1,11 @@
 package async
 
 import (
-	"cmssdk-go/model"
-	"cmssdk-go/promise"
-	"cmssdk-go/sync/container"
 	"errors"
 	uuid "github.com/satori/go.uuid"
+	"github.com/zanshichun/cmssdk-go/model"
+	"github.com/zanshichun/cmssdk-go/promise"
+	"github.com/zanshichun/cmssdk-go/sync/container"
 )
 
 var errResultConvert = errors.New("send resp convert err")

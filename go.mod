@@ -1,6 +1,6 @@
-module cmssdk-go
+module github.com/zanshichun/cmssdk-go
 
-go 1.13
+go 1.14
 
 require (
 	github.com/buger/jsonparser v1.0.0 // indirect
